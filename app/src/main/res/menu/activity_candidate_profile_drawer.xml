@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hom"
+            android:title=" Home"/>
+        <item
+            android:id="@+id/prof"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/cl"
+            android:title="candidateList" />
+        <item
+            android:id="@+id/can"
+            android:title="Promises and history"/>
+        <item
+            android:id="@+id/rul"
+            android:title="Rules"/>
+        <item
+            android:id="@+id/stas"
+            android:title="statistics"/>
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/abu"
+                android:title="About Us"/>
+            <item
+                android:id="@+id/log"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

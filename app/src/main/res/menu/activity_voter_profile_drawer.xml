@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hom"
+            android:title="Home"/>
+        <item
+            android:id="@+id/prof"
+            android:title="Profile" />
+        <item
+            android:id="@+id/CL"
+            android:title="CandidateList" />
+        <item
+            android:id="@+id/Stats"
+            android:title="Statistics" />
+        <item
+            android:id="@+id/rules"
+            android:title="rules" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/abu"
+                android:title="About Us"
+                />
+            <item
+                android:id="@+id/lo"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

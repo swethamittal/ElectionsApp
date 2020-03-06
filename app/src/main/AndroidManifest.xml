@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.amazon.integratedapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GlobalsActivity"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ResultActivity"></activity>
+        <activity
+            android:name=".NoMajority"
+            android:label="@string/title_activity_no_majority"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LanguageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OTPActivity" />
+        <activity android:name=".HelloWorldActivity" />
+        <activity
+            android:name=".AutoFillActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".CheckLayoutActivity" />
+        <activity android:name=".CandidateRegistrationActivity" />
+        <activity
+            android:name=".CandidateProfileActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VoterProfileActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CandidatePromisesActivity"
+            android:label="@string/title_activity_candidate_prom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CandidateProfileInformationActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AlreadyVotedActivity" />
+        <activity android:name=".VotingListActivity" />
+        <activity android:name=".ThanksForVotingActivity" />
+        <activity
+            android:name=".StatisticsIPAddressActivity"
+            android:label="@string/title_activity_stats"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RulesIPAddressActivity"
+            android:label="@string/title_activity_rules"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VotersRulesActivity"
+            android:label="@string/title_activity_rules"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VoterProfileInformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VotersAboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VotersStatisticsIPAddressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CandidateListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VoterCandidateListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CandidateInformationActivity" />
+        <activity android:name=".PasswordResetActivity" />
+        <activity android:name=".VerifyOTPForForgotPasswordActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotificationActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>

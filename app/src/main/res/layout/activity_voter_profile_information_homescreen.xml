@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VoterProfileInformationActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#1C2761">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                />
+
+            <TextView
+                android:id="@+id/na"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="19sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/text_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/voter_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="VOTER INFORMATION"
+                android:textSize="24dp"
+                android:layout_margin="10dp"/>
+        </GridLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@+id/text_grid">
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_adhar"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="AADHAR NUMBER" />
+
+                <EditText
+                    android:id="@+id/adhaarNumber"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/white_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_father_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FATHER/HUSBAND'S NAME" />
+
+                <EditText
+                    android:id="@+id/father_name"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/white_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_dob"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="DOB" />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_gender"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="GENDER" />
+
+                <EditText
+                    android:id="@+id/Gender"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+            <TableRow
+                android:background="@drawable/white_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/test_house_number"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="HOUSE NUMBER" />
+
+                <EditText
+                    android:id="@+id/Hno"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/white_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_street"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="STREET" />
+
+                <EditText
+                    android:id="@+id/Street"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/white_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tesr_area"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="AREA" />
+
+                <EditText
+                    android:id="@+id/Area"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/white_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_district"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="DISTRICT" />
+
+                <EditText
+                    android:id="@+id/District"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+            <TableRow
+                android:background="@drawable/white_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_constituency"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="CONSTITUENCY" />
+
+                <EditText
+                    android:id="@+id/Constituency"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/white_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/grey_box"
+                android:layout_margin="1sp"
+                android:layout_height="30dp"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/text_state"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:text="STATE" />
+
+                <EditText
+                    android:id="@+id/State"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/grey_box"
+                    android:text=""
+                    android:editable="false"/>
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>

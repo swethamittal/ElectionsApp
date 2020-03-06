@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ElectionACMS</string>
+    <string name="login">లాగిన్</string>
+    <string name="reg">నమోదు</string>
+    <string name="hello">Hello</string>
+    <string-array name="voter_cadidate">
+        <item>ఓటరు</item>
+        <item>అభ్యర్థి</item>
+    </string-array>
+    <string name="enter_adhar">ఆధార్లో ప్రవేశించండి</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="not_reg">ఒక నమోదిత ఓటరు కాదు?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_can_list">canList</string>
+    <string name="title_activity_candidate_prom">candidateProm</string>
+    <string name="declaration"> I hereby declare that the information furnished above is true to the best of my knowledge. I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).</string>
+    <string name="title_activity_stats">stats</string>
+    <string name="title_activity_rules">rules</string>
+
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="promisesandhistory">వాగ్దానాలు మరియు చరిత్ర</string>
+    <string name="candidatelist">అభ్యర్థి జాబితా</string>
+    <string name="vote">ఓటు</string>
+    <string name="statistics">గణాంకాలు</string>
+    <string name="rules">నియమాలు</string>
+    <string name="area">మీ ప్రాంతంలో అభ్యర్థులు</string>
+    <string name="forgotpassword">పాస్వర్డ్ను మర్చిపోయారు?</string>
+    <string name="registeredoffline">ఆఫ్లైన్లో నమోదు చేయబడింది?</string>
+    <string name="entervotercandidate">రకం ఓటరు లేదా అభ్యర్థి</string>
+    <string name="registeronline">ఆన్లైన్ నమోదు</string>
+</resources>

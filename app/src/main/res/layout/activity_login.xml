@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="106dp"
+            android:layout_height="62dp"
+            android:background="#fff"
+            app:srcCompat="@drawable/voter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="#ffffff"
+            android:gravity="right">
+
+            <Spinner
+                android:id="@+id/spinner_voter_candidate"
+                android:layout_width="135dp"
+                android:layout_height="31dp"
+                android:gravity="right"
+                android:entries="@array/voter_cadidate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#1C2761">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="#1C2761"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/enter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bd_edittext"
+                    android:ems="10"
+                    android:hint="@string/enter_adhar"
+                    android:inputType="textPersonName"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/enter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bd_edittext"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="@string/password" />
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/white_box_button"
+                    android:gravity="center"
+                    android:onClick="Read"
+                    android:text="@string/login"
+                    android:textColor="#1C2761" />
+
+                <TextView
+                    android:id="@+id/fp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/forgotpassword"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/not_registered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/not_reg"
+            android:textColor="#1C2761" />
+
+        <EditText
+            android:id="@+id/enter_adhar_for_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bd_edittext"
+            android:ems="10"
+            android:hint="@string/enter_adhar"
+            android:inputType="textPersonName"
+            android:textColor="#1C2761" />
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_box_button"
+            android:gravity="center"
+            android:text="@string/reg"
+            android:textColor="#1C2761" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/registeredoffline"
+            android:textColor="#1C2761" />
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bd_edittext"
+            android:ems="10"
+            android:hint="@string/entervotercandidate"
+            android:inputType="textPersonName"
+            android:textColor="#1C2761" />
+
+        <EditText
+            android:id="@+id/enter_adhar_for_online_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:background="@drawable/bd_edittext"
+            android:hint="@string/enter_adhar"
+            android:inputType="textPersonName"
+            android:textColor="#1C2761" />
+
+        <Button
+            android:id="@+id/online_reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/registeronline"
+            android:onClick="setPwd"
+            android:background="@drawable/white_box_button"
+            android:textColor="#1C2761" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ElectionACMS</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="reg">रजिस्टर करें</string>
+    <string name="hello">नमस्ते</string>
+    <string-array name="voter_cadidate">
+        <item>मतदाता</item>
+        <item>उम्मीदवार</item>
+    </string-array>
+    <string name="enter_adhar">आधार कार्ड नंबर</string>
+    <string name="password">पारण शब्द</string>
+    <string name="not_reg">पंजीकृत मतदाता नहीं?</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_can_list">canList</string>
+    <string name="title_activity_candidate_prom">candidateProm</string>
+    <string name="declaration">I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).</string>
+    <string name="title_activity_stats">stats</string>
+    <string name="title_activity_rules">rules</string>
+
+    <string name="profile">प्रोफाइल</string>
+    <string name="promisesandhistory">वादे और इतिहास</string>
+    <string name="candidatelist">उम्मीदवार सूची</string>
+    <string name="vote">वोट</string>
+    <string name="statistics">आंकड़े</string>
+    <string name="rules">नियम</string>
+    <string name="area">आपके क्षेत्र में उम्मीदवार</string>
+    <string name="forgotpassword">पासवर्ड भूल गए?</string>
+    <string name="registeredoffline">पंजीकृत ऑफ़लाइन?</string>
+    <string name="entervotercandidate">वोटर या उम्मीदवार टाइप करें</string>
+    <string name="registeronline">ऑनलाइन पंजीकरण करें</string>
+</resources>

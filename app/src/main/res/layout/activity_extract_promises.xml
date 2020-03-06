@@ -1,0 +1,20 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:verticalSpacing="5dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp">
+
+    <TableRow android:layout_height="173dp">
+        <TextView
+            android:id="@+id/promise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_gravity="left"
+            />
+    </TableRow>
+</TableLayout>

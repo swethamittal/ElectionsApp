@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1C2761"
+    tools:context=".CandidateRegistrationActivity"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:text="CANDIDATE REGISTRATION"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:text="ADHAAR  NUMBER*:"
+                android:textColor="#ffff"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/adhaarNumber"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:editable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:text="Full Name:"
+                android:textColor="#ffff"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:editable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:enabled="false"
+                android:text="Father/Husband's Name:"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/father_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edit_box"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="left">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Assembly Constituency"
+                android:textColor="#ffffff"
+                android:layout_marginRight="11dp"
+                android:enabled="false"/>
+            <EditText
+                android:layout_width="220dp"
+                android:id="@+id/Constituency"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:editable="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:enabled="false"
+                android:text="Date Of Birth"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:background="@drawable/edit_box" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Gender"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:text="Male"
+                        android:textColor="#ffffff" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:text="Female"
+                        android:textColor="#ffffff" />
+
+                    <RadioButton
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:text="Others"
+                        android:textColor="#ffffff" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+
+
+            <Button
+                android:id="@+id/DLButton"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="DOWNLOAD"
+                android:layout_gravity="center_horizontal"
+                android:onClick="dlpop"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/ULButton"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD"
+                android:layout_gravity="center_horizontal"
+                android:onClick="uppop"/>
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:layout_gravity="center_horizontal"
+                android:onClick="register"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

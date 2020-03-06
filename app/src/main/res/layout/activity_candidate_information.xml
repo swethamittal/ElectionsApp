@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CandidateInformationActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:layout_gravity="center_horizontal"
+                android:text="RAJA SINGH"
+                android:textColor="#1C2761"
+                android:textSize="32dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:text="Constituency:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Constituency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goshamahal"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:text="Party:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/party"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BJP"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:text="Born:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 January,1998"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:text="Residence:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/residence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goshamahal,Hyderabad"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/affidavit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download Affidavit"
+                android:onClick="affidavit"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/white_box_button"
+                android:textColor="#1C2761"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POLITICAL HISTORY"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/white_box_button"
+                android:textColor="#1C2761"/>
+
+            <app.amazon.integratedapp.ExpandableHeightGridViewActivity
+                android:id="@+id/history"
+                android:layout_below="@id/sv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="1000dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:stretchMode="columnWidth"
+                android:isScrollContainer="false"
+                android:nestedScrollingEnabled="true">
+
+            </app.amazon.integratedapp.ExpandableHeightGridViewActivity>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROMISES"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/white_box_button"
+                android:textColor="#1C2761"/>
+
+            <app.amazon.integratedapp.ExpandableHeightGridViewActivity
+                android:id="@+id/promisegrid"
+                android:layout_below="@id/sv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="1000dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:stretchMode="columnWidth"
+                android:isScrollContainer="false"
+                android:nestedScrollingEnabled="true">
+
+            </app.amazon.integratedapp.ExpandableHeightGridViewActivity>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RATING AND FEEDBACK"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/white_box_button"
+                android:textColor="#1C2761"/>
+
+            <app.amazon.integratedapp.ExpandableHeightGridViewActivity
+                android:id="@+id/ratingfeedbackgrid"
+                android:layout_below="@id/sv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="1000dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:stretchMode="columnWidth"
+                android:isScrollContainer="false"
+
+                android:nestedScrollingEnabled="true"/>
+
+            <RatingBar
+                android:layout_marginTop="25dp"
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Enter your feedback here"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="rating"
+                android:background="@drawable/white_box_button"
+                android:textColor="#1C2761"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
